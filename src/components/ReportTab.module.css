@@ -1,0 +1,69 @@
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.progressTitle { font-size: 15px; font-weight: 600; color: var(--gray-800); }
+.progressSub { font-size: 12px; color: var(--gray-600); margin-top: 2px; }
+.progressCount { font-size: 32px; font-weight: 700; color: var(--navy); line-height: 1; }
+
+.progressBarBg {
+  height: 10px;
+  background: var(--gray-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progressBarFill {
+  height: 100%;
+  background: var(--navy);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  min-width: 4px;
+}
+.progressPct { font-size: 12px; color: var(--gray-600); margin-top: 5px; text-align: right; }
+
+.formTitle { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 12px; }
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 480px) {
+  .twoCol { grid-template-columns: 1fr; }
+}
+
+.sigRow { display: flex; gap: 10px; }
+.sigInput { font-size: 22px; font-weight: 700; text-align: center; color: var(--navy); }
+
+.submitRow { display: flex; align-items: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+.submitBtn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.submitBtn:hover { background: var(--navy-dark); }
+.submitBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.successMsg {
+  font-size: 13px;
+  color: var(--green);
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.recentTitle { font-size: 13px; font-weight: 600; color: var(--gray-600); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table th { text-align: left; color: var(--gray-600); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; padding: 4px 6px 8px; border-bottom: 1px solid var(--gray-200); }
+.table td { padding: 7px 6px; border-bottom: 1px solid var(--gray-100); }
+.table tr:last-child td { border-bottom: none; }
